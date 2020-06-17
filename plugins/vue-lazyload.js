@@ -6,7 +6,7 @@ import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload, {
   preLoad: 1,
-  error: require('~/static/loading.jpg'),
+  error: require('~/static/error.jpg'),
   loading: require('~/static/loading.jpg'),
   attempt: 1
 })

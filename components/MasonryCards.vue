@@ -9,11 +9,13 @@
         class="col-lg-4 col-md-6 col-12 grid-item"
       >
         <div class="card card-flat card-masonry">
-          <!-- Card image -->
-          <div class="card-masonry-area-image with-hover-overlay">
+          <div
+            v-lazy-container="{ selector: 'img' }"
+            class="card-masonry-area-image with-hover-overlay"
+          >
             <img
               class="img-fluid card-masonry-image"
-              :src="card.attributes.cover"
+              :data-src="card.attributes.cover"
               alt="Card image cap"
             />
           </div>
@@ -43,6 +45,7 @@ export default {
   name: 'MasonryCards',
 
   props: {
+    // eslint-disable-next-line vue/require-default-prop
     cards: [Array]
   },
 
@@ -78,8 +81,8 @@ export default {
       const msnry = new Masonry(grid, {
         // options...
         itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        percentPosition: true
+        columnWidth: '.grid-sizer'
+        // percentPosition: true
       })
 
       this.$emit('masonry-loaded', msnry)

@@ -90,7 +90,7 @@
     </div>
     <div class="container-fluid bg-uv">
       <div class="container py-3">
-        <div class="card card-plain text-right">
+        <div class="card card-plain text-md-right">
           <div class="card-body">
             <h2 class="text-light mb-3"><strong>Design</strong></h2>
             <h4 class="text-light">O que eu gosto de desenvolver:</h4>
