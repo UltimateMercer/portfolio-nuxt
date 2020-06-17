@@ -1,0 +1,123 @@
+<template>
+  <div class="container-fluid bg-dark">
+    <div
+      class="col-lg-10 col-md-12 col-10 offset-lg-1 offset-md-0 offset-1 px-0 pb-5"
+    >
+      <h2 class="text-light mb-2">
+        <strong>
+          Projetos recentes
+        </strong>
+      </h2>
+      <div v-lazy-container="{ selector: 'img' }" class="row">
+        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+          <div
+            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+          >
+            <img
+              :data-src="require('~/static/skywalker.jpg')"
+              class="card-background-image featured-image"
+              alt="Image Post"
+            />
+            <div class="card-body h-100 d-flex flex-column justify-content-end">
+              <h5 class="card-featured-title">
+                <span class="marker marker-dark">
+                  <strong>
+                    Star Wars: The Rise of Skywalker
+                  </strong>
+                </span>
+              </h5>
+              <div class="card-subinfo">
+                <span class="badge badge-uv badge-tag">
+                  Design
+                </span>
+                <span class="badge badge-dark badge-tag">
+                  Nov 13
+                </span>
+              </div>
+              <a
+                href=""
+                class="stretched-link"
+                title="Acessar post do projeto"
+              ></a>
+            </div>
+
+            <div class="mask texture-mask-2"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+          <div
+            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+          >
+            <img
+              data-src="https://i.imgur.com/gTAp5QB.jpg"
+              class="card-background-image featured-image"
+              alt="Image Post"
+            />
+            <div class="card-body h-100 d-flex flex-column justify-content-end">
+              <h5 class="card-featured-title">
+                <span class="marker marker-dark">
+                  <strong>
+                    Ultimate Mercer: Novo Logotipo
+                  </strong>
+                </span>
+              </h5>
+              <div class="card-subinfo">
+                <span class="badge badge-uv badge-tag">
+                  Design
+                </span>
+                <span class="badge badge-dark badge-tag">
+                  Mai 27
+                </span>
+                <a
+                  href=""
+                  class="stretched-link"
+                  title="Acessar post do projeto"
+                ></a>
+              </div>
+            </div>
+            <div class="mask texture-mask-2"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+          <div
+            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+          >
+            <img
+              data-src="https://miro.medium.com/max/1500/1*WpG7T6nPIYcyqt1hLgqQNg.png"
+              class="card-background-image featured-image"
+              alt=""
+            />
+            <div class="card-body h-100 d-flex flex-column justify-content-end">
+              <h5 class="card-featured-title">
+                <span class="marker marker-dark">
+                  <strong>
+                    Ultimate Mercer: Be The Revolution, Join The Ultimates
+                  </strong>
+                </span>
+              </h5>
+              <div class="card-subinfo">
+                <span class="badge badge-dark badge-tag text-orange">
+                  Nerdstation
+                </span>
+                <span class="badge badge-dark badge-tag">
+                  Jan 20
+                </span>
+                <a
+                  href=""
+                  class="stretched-link"
+                  title="Acessar post do projeto"
+                ></a>
+              </div>
+            </div>
+            <div class="mask texture-mask-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: 'LastProjects'
+}
+</script>
