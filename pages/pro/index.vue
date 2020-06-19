@@ -1,8 +1,12 @@
 <template>
-  <div class="m-0">
-    <div class="container-fluid bg-dark">
+  <div class="bg-dark m-0">
+    <div class="container-fluid ">
       <div class="container text-light px-lg-0">
-        <h2 class="pt-3 mb-3">Projetos profissionais e acadêmicos</h2>
+        <h2 class="pt-3 mb-3">
+          <strong>
+            Projetos profissionais e acadêmicos
+          </strong>
+        </h2>
         <p class="text-size">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
           eveniet eligendi earum? Ipsa illum voluptatum magnam cupiditate nam
@@ -10,8 +14,8 @@
           eaque iusto aliquid?
         </p>
       </div>
-      <div class="container p-0 py-3">
-        <MasonryCards :cards="posts" />
+      <div class="container p-0 pb-5">
+        <MasonryCards :posts="posts" :route="route" />
       </div>
     </div>
   </div>
@@ -48,20 +52,14 @@ export default {
   data() {
     return {
       prefix: 'pro',
-      posts: ''
+      posts: '',
+      route: '/pro'
     }
   }
-  // methods: {
-  //   getPermalink(pro) {
-  //     return `${this.prefix}/${
-  //       pro.meta.resourcePath
-  //         .split('\\')
-  //         .pop()
-  //         .split('/')
-  //         .pop()
-  //         .split('.')[0]
-  //     }`
-  //   }
-  // }
 }
 </script>
+<style lang="scss">
+.text-size {
+  font-size: 1.125rem;
+}
+</style>
