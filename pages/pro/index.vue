@@ -14,7 +14,7 @@
           eaque iusto aliquid?
         </p>
       </div>
-      <div class="container p-0 pb-5">
+      <div class="col-lg-10 col-md-12 col-12 offset-lg-1 offset-md-0 pb-5">
         <MasonryCards :posts="posts" :route="route" />
       </div>
     </div>

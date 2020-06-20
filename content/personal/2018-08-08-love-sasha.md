@@ -7,5 +7,6 @@ tags:
   - Tipografia cinética
   - Edição de video
 cover: https://i.imgur.com/ILvw4HT.jpg
+imgorientation: 'portrait'
 description:
 ---

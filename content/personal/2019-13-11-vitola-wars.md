@@ -6,6 +6,7 @@ tags:
   - Tipografia cinética
   - Edição de video
 cover: https://i.imgur.com/pA5cVcC.png
+imgorientation: ''
 description:
 ---
 

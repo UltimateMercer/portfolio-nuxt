@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
-    <div class="container p-lg-0">
-      <div class="sticky-top pt-4 pb-1 px-1">
+    <div class="container py-2 px-lg-0">
+      <div class="sticky-top pt-4 pb-3 px-1">
         <div class="row">
           <div class="col-lg-4">
             <div v-lazy-container="{ selector: 'img' }">
@@ -15,11 +15,16 @@
             </div>
           </div>
           <div class="col-lg-8 pl-lg-0 my-3">
-            <h1 class="mt-3 mb-2">
+            <h1 class="mt-2 mb-1">
               <span class="marker marker-dark marker-title">
                 <strong>Julian Silva da Cunha</strong>
               </span>
             </h1>
+            <!--h1 class="mb-2">
+              <span class="marker marker-dark marker-title">
+                <strong>Ultimate Mercer</strong>
+              </span>
+            </!--h1-->
             <div class="">
               <h5>
                 <span class="badge badge-primary badge-tag text-dark">
