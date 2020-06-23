@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container-fluid bg-dark">
+  <section>
+    <article class="container-fluid bg-dark">
       <div class="container p-lg-0">
         <div class="pt-4 pb-1 px-lg-4 px-1">
           <h2 class="text-light mb-3"><strong>Projetos</strong></h2>
@@ -13,9 +13,9 @@
           </p>
         </div>
       </div>
-    </div>
+    </article>
 
-    <div class="container-fluid bg-dark p-0">
+    <section class="container-fluid bg-dark p-0">
       <div v-lazy-container="{ selector: 'img' }" class="row m-0 p-0">
         <div
           class="col-lg-6 col-md-6 col-12 p-0 pl-lg-0 pr-lg-3 pl-md-0 pr-md-2"
@@ -104,8 +104,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
 </template>
 <script>
 export default {

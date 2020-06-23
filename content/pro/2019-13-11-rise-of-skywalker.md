@@ -6,6 +6,7 @@ tags:
   - Tipografia cinética
   - Edição de video
 cover: https://geekverso.com/wp-content/uploads/2019/10/Star-Wars-The-rise-skywalker-poster-dual.jpg
+imgorientation: ''
 description:
 ---
 

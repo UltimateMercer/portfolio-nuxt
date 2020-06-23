@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-dark m-0">
-    <div class="container-fluid ">
+  <div class="bg-dark mt-5 pt-4">
+    <div class="container-fluid pt-3 pb-2">
       <div class="container text-light px-lg-0">
         <h2 class="pt-3 mb-3">
           <strong>

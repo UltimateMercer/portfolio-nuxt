@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container-fluid bg-light">
+  <section>
+    <section class="container-fluid bg-light">
       <div class="container p-lg-0 pt-1 pb-2">
         <div class="px-lg-4 px-1">
           <h2 class="my-3"><strong>Conhecimento</strong></h2>
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div class="container-fluid bg-primary">
       <div class="container py-3">
         <div class="card card-plain">
@@ -22,7 +22,7 @@
             <h2 class="text-dark mb-3">
               <strong>Desenvolvimento Front-End/Web</strong>
             </h2>
-            <h4 class="text-dark">Linguagens conhecidas:</h4>
+            <h4 class="text-dark">Tecnologias conhecidas:</h4>
             <h5 class="mb-3">
               <span class="badge badge-primary border-badge-dark text-dark"
                 >HTML</span
@@ -134,7 +134,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 export default {
