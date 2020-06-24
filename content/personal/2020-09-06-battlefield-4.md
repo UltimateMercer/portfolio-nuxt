@@ -8,6 +8,7 @@ tags:
 cover: https://i.imgur.com/86Be8nA.png
 imgorientation: ''
 description:
+fontStyle: ''
 ---
 
 Hey Everyone, this is simple a test blog post to show you

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-dark mt-5 pt-4">
-    <div class="container-fluid pt-3 pb-2">
-      <div class="container text-light px-lg-0">
-        <h2 class="pt-3 mb-3">
+  <div class="bg-dark">
+    <div class="container-fluid mt-5 pb-4">
+      <div class="container text-light pt-3 px-lg-0">
+        <h2 class="pt-5 mb-3">
           <strong>
             Projetos pessoais
           </strong>
@@ -37,7 +37,7 @@ export default {
       ...context(key),
       _path: `/personal/${key.replace('.md', '').replace('./', '')}`
     }))
-    return { posts: posts.reverse() }
+    return { posts }
   },
 
   data() {

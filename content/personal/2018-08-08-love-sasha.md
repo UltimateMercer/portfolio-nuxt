@@ -9,4 +9,5 @@ tags:
 cover: https://i.imgur.com/ILvw4HT.jpg
 imgorientation: 'portrait'
 description:
+fontStyle: ''
 ---

@@ -8,4 +8,5 @@ tags:
 cover: https://i.imgur.com/qpw5KQ1.png
 imgorientation: 'landscape'
 description:
+fontStyle: ''
 ---

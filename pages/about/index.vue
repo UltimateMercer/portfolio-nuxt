@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-4 py-5">
+  <div class="pb-5">
     <About />
   </div>
 </template>

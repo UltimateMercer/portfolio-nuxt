@@ -1,5 +1,5 @@
 <template>
-  <section class="container-fluid bg-light">
+  <section class="container-fluid">
     <div class="container p-0">
       <div class="col-12 py-3 px-lg-4">
         <div class="header-profile">

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-dark mt-5 pt-4">
-    <div class="container-fluid pt-3 pb-2">
-      <div class="container text-light px-lg-0">
-        <h2 class="pt-3 mb-3">
+  <section class="bg-dark">
+    <div class="container-fluid mt-5 pb-4">
+      <div class="container text-light pt-3 px-lg-0">
+        <h2 class="pt-5 mb-3">
           <strong>
             Projetos profissionais e acadêmicos
           </strong>
@@ -18,7 +18,7 @@
         <MasonryCards :posts="posts" :route="route" />
       </div>
     </div>
-  </div>
+  </section>
 </template>
 <script>
 import MasonryCards from '~/components/MasonryCards.vue'
@@ -46,7 +46,7 @@ export default {
       ...context(key),
       _path: `/pro/${key.replace('.md', '').replace('./', '')}`
     }))
-    return { posts: posts.reverse() }
+    return { posts }
   },
 
   data() {

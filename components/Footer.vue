@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid bg-light">
     <div class="container">
-      <footer class="mt-5 py-3 pt-md-4">
+      <footer class="mt-3 py-3 pt-md-4">
         <div class="row">
           <div class="col-12 col-md">
             <img
@@ -13,7 +13,7 @@
             <small class="d-block mb-3 text-muted">&copy;2020</small>
           </div>
           <div class="col-6 col-md">
-            <h4>Redes sociais</h4>
+            <h5>Redes sociais</h5>
             <ul class="list-unstyled">
               <li class="">
                 <a
@@ -100,21 +100,24 @@
             </ul>
           </div>
           <div class="col-6 col-md">
-            <h5>Conteúdo</h5>
+            <h5>Projetos</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-dark" href="#">Resource</a></li>
-              <li><a class="text-dark" href="#">Resource name</a></li>
-              <li><a class="text-dark" href="#">Another resource</a></li>
-              <li><a class="text-dark" href="#">Final resource</a></li>
+              <li>
+                <nuxt-link class="text-dark" to="/pro"
+                  >Profissionais e acadêmicos</nuxt-link
+                >
+              </li>
+              <li>
+                <nuxt-link class="text-dark" to="/personal">Pessoais</nuxt-link>
+              </li>
             </ul>
           </div>
           <div class="col-6 col-md">
             <h5>Sobre</h5>
             <ul class="list-unstyled text-small">
-              <li><a class="text-dark" href="about.html">Team</a></li>
-              <li><a class="text-dark" href="#">Locations</a></li>
-              <li><a class="text-dark" href="#">Privacy</a></li>
-              <li><a class="text-dark" href="#">Terms</a></li>
+              <li>
+                <nuxt-link class="text-dark" to="/about">Sobre mim</nuxt-link>
+              </li>
             </ul>
           </div>
         </div>

@@ -8,4 +8,5 @@ tags:
 cover: https://i.imgur.com/WOL8Ywf.jpg
 imgorientation: 'portrait'
 description:
+fontStyle: ''
 ---

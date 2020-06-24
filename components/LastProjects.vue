@@ -9,7 +9,7 @@
         </strong>
       </h2>
       <div v-lazy-container="{ selector: 'img' }" class="row">
-        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+        <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
             class="card card-background card-featured-post neon-shadow-golden view mb-3"
           >
@@ -34,17 +34,18 @@
                   Nov 13
                 </span>
               </div>
-              <a
-                href=""
+
+              <nuxt-link
+                to="/pro/2019-11-13-star-wars"
                 class="stretched-link"
                 title="Acessar post do projeto"
-              ></a>
+              ></nuxt-link>
             </div>
 
             <div class="mask texture-mask-2"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+        <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
             class="card card-background card-featured-post neon-shadow-golden view mb-3"
           >
@@ -78,7 +79,7 @@
             <div class="mask texture-mask-2"></div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-8 col-12 offset-lg-0 offset-md-2">
+        <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
             class="card card-background card-featured-post neon-shadow-golden view mb-3"
           >

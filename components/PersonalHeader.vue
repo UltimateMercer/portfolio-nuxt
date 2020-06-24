@@ -1,6 +1,6 @@
 <template>
-  <header class="container-fluid mt-5 pt-4">
-    <div class="container pb-lg-5 pb-3 px-lg-0">
+  <header class="container-fluid mt-5 mb-5">
+    <div class="container pt-5 pb-lg-5 pb-5 px-lg-0 h-100">
       <div class="py-5 px-lg-4">
         <h1 class="mt-3 mb-3 ">
           <strong> Oi! Eu sou o </strong>
@@ -23,7 +23,7 @@
             href="mailto:juliancunha2010@hotmail.com"
             target="_blank"
             rel="noopener"
-            title="E-mail"
+            title="Acessar e-mail"
           >
             <font-awesome-icon :icon="['fas', 'envelope-square']" size="lg" />
             E-mail
@@ -33,7 +33,7 @@
             href="https://github.com/UltimateMercer"
             target="_blank"
             rel="noopener"
-            title="Github"
+            title="Acessar github"
           >
             <font-awesome-icon :icon="['fab', 'github']" size="lg" />
             Github
@@ -43,7 +43,7 @@
             href="https://www.facebook.com/UltimateMercer"
             target="_blank"
             rel="noopener"
-            title="Facebook"
+            title="Acessar acebook"
           >
             <font-awesome-icon :icon="['fab', 'facebook-square']" size="lg" />
             Facebook
@@ -53,7 +53,7 @@
             href="https://www.instagram.com/ultimatemercer/"
             target="_blank"
             rel="noopener"
-            title="Instagram"
+            title="Acessar instagram"
           >
             <font-awesome-icon :icon="['fab', 'instagram']" size="lg" />
             Instagram

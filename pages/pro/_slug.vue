@@ -44,7 +44,7 @@
         <div class="header-image-half header-h-full view">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full duotone-cyberpunk-n"
+            class="header-image-background header-h-full"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
@@ -89,7 +89,7 @@
         <div class="header-image header-h-full view">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full duotone-cyberpunk-n"
+            class="header-image-background header-h-full"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
@@ -104,7 +104,7 @@
         class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 p-lg-0 col-md-10 offset-md-1 p-md-0 col-12 mt-5 mb-4"
       >
         <div class="page">
-          <div class="post base">
+          <div class="post" :class="fontStyle">
             <div v-if="post.attributes.description" class="mb-4">
               <p class="mb-0">{{ post.attributes.description }}</p>
               <hr class="m bg-dark" />
@@ -153,6 +153,14 @@ export default {
 
       // Abaixo funfa
       // return require(`~/assets/images${this.routes}/${post.attributes.attributes.cover}`)
+    },
+    fontStyle() {
+      const font = this.post.attributes.fontStyle
+      if (!font) {
+        return 'base'
+      } else {
+        return font
+      }
     }
   }
 }
