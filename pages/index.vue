@@ -3,30 +3,10 @@
     <PersonalHeader />
 
     <KnowledgeAreas />
-    <Projects />
-    <LastProjects />
-
-    <!--div class="container m-0">
-      <logo />
-      <h1 class="title">
-        portfolio-nuxt
-      </h1>
-      <h2 class="subtitle">
-        My spectacular Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </!--div-->
+    <div class="bg-dark">
+      <Projects />
+      <LastProjects />
+    </div>
   </div>
 </template>
 

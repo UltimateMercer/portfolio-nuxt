@@ -1,15 +1,16 @@
 <template>
   <section>
-    <section class="container-fluid bg-light">
-      <div class="container p-lg-0 pt-1 pb-2">
+    <section class="container-fluid bg-dark">
+      <div class="container text-light p-lg-0 pb-2">
         <div class="px-lg-4 px-1">
-          <h2 class="my-3"><strong>Conhecimento</strong></h2>
-          <div class="text-size mb-3">
+          <h2 class="my-3 pt-4"><strong>Conhecimento</strong></h2>
+          <div class="text-size pb-4">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-              consequuntur eligendi sint, hic recusandae possimus reprehenderit
-              rem delectus, adipisci illum aspernatur quam quasi facilis
-              voluptatum iusto quisquam, sequi expedita maiores.
+              Durante os últimos anos venho estudando e praticando a utilização
+              de diferentes tecnologias, tanto para o Desenvolvimento
+              Front-end/Web quanto para o Design, com isso venho tendo contato e
+              produzindo material com diferentes ferramentas, linguagens e
+              tecnologias, que tem me propiciado evoluir em ambas as áreas.
             </p>
           </div>
         </div>
@@ -72,7 +73,7 @@
                 >NPM</span
               >
             </h5>
-            <h4 class="text-dark">Quero aprender/aprimorar:</h4>
+            <h4 class="text-dark">Quero aprender:</h4>
             <h5 class="mb-3">
               <span class="badge badge-primary border-badge-dark text-dark"
                 >React</span
