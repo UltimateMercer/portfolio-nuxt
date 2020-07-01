@@ -44,7 +44,7 @@
         <div class="header-image-half header-h-full view">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full"
+            class="header-image-background header-h-full duotone-cyberpunk-a"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
@@ -89,7 +89,7 @@
         <div class="header-image header-h-full view">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full"
+            class="header-image-background header-h-full duotone-cyberpunk-a"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
@@ -106,7 +106,9 @@
         <div class="page">
           <div class="post" :class="fontStyle">
             <div v-if="post.attributes.description" class="mb-4">
-              <p class="mb-0">{{ post.attributes.description }}</p>
+              <h4 class="mb-3">
+                {{ post.attributes.description }}
+              </h4>
               <hr class="m bg-dark" />
             </div>
 

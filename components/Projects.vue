@@ -39,9 +39,8 @@
                   </h3>
                   <p>
                     <span class="marker marker-dark">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Aqui disponibilizo todos os meus projetos realizados em
+                      âmbito acadêmico e profissional.
                     </span>
                   </p>
                   <div class="d-flex">
@@ -82,9 +81,8 @@
                   </h3>
                   <p>
                     <span class="marker marker-dark">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                      Aqui disponibilizo projetos pessoais, aprendizados, teste,
+                      desafios e alguns pedidos de amigos.
                     </span>
                   </p>
 

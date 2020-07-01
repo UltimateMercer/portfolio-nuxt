@@ -50,7 +50,9 @@
             class="card card-background card-featured-post neon-shadow-golden view mb-3"
           >
             <img
-              data-src="https://i.imgur.com/gTAp5QB.jpg"
+              :data-src="
+                require('~/assets/images/personal/ultimate-mercer-logo-1.jpg')
+              "
               class="card-background-image featured-image"
               alt="Image Post"
             />
@@ -58,7 +60,7 @@
               <h5 class="card-featured-title">
                 <span class="marker marker-dark">
                   <strong>
-                    Ultimate Mercer: Novo Logotipo
+                    Ultimate Mercer: Nova idéia de logo
                   </strong>
                 </span>
               </h5>
@@ -67,13 +69,13 @@
                   Design
                 </span>
                 <span class="badge badge-dark badge-tag">
-                  Mai 27
+                  Abr 15
                 </span>
-                <a
-                  href=""
+                <nuxt-link
+                  to="/personal/2020-04-15-ultimate-mercer-logo"
                   class="stretched-link"
                   title="Acessar post do projeto"
-                ></a>
+                ></nuxt-link>
               </div>
             </div>
             <div class="mask texture-mask-2"></div>
