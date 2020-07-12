@@ -1,5 +1,8 @@
 import Mode from 'frontmatter-markdown-loader/mode'
 const path = require('path')
+const glob = require('glob')
+
+const markdownPaths = ['pro', 'personal']
 
 export default {
   mode: 'universal',
@@ -7,7 +10,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Julian Silva da Cunha - Portfolio',
+    title: 'Ultimate Mercer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -96,5 +99,19 @@ export default {
         loader: 'frontmatter-markdown-loader'
       })
     }
+  },
+
+  generate: {
+    routes: dynamicMarkdownRoutes()
   }
+}
+
+function dynamicMarkdownRoutes() {
+  return [].concat(
+    ...markdownPaths.map((mdPath) => {
+      return glob
+        .sync(`${mdPath}/*.md`, { cwd: 'content' })
+        .map((filepath) => `${mdPath}/${path.basename(filepath, '.md')}`)
+    })
+  )
 }

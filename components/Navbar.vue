@@ -55,7 +55,7 @@ export default {
 .navbar {
   font-family: 'IBM Plex Sans Condensed', 'Fira Code', sans-serif;
   font-size: 1.25rem;
-  padding: 0 1rem !important;
+  padding: 0.25rem 1rem !important;
   .navbar-nav {
     .nav-item {
       .nav-link {

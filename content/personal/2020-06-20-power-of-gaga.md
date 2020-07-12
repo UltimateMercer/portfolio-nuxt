@@ -6,8 +6,10 @@ tags:
   - Edição digital
   - Arte
   - Poster
-cover: GaGa-art-final-ultimate-power.jpg
+cover: https://i.imgur.com/PfaL9wP.jpg
 imgorientation: 'landscape'
 description:
 fontStyle: ''
 ---
+
+<img src="https://i.imgur.com/PfaL9wP.jpg" class="img-fluid mx-auto d-block">

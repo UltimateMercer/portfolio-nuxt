@@ -1,6 +1,6 @@
 ---
 title: Join New Avengers
-timestamp: 13 de Novembro de 2019
+timestamp: 30 de maio de 2019
 category: 'Design'
 tags:
   - Tipografia cinética
@@ -8,8 +8,8 @@ tags:
 #cover: \assets\images\personal\cap-construtivismo1.jpg
 cover: https://i.imgur.com/jlu6jwf.jpg
 imgorientation: 'portrait'
-description: 'Arte produzida para a disciplina de Tipografia 1, do curso de Design Digital.'
-fontStyle: 'base'
+description: 'Arte produzida para avaliação na disciplina de Tipografia 1, do curso de Design Digital.'
+fontStyle: ''
 ---
 
 ## Estética do poster : Construtivismo Russo
