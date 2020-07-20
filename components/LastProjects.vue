@@ -11,7 +11,7 @@
       <div v-lazy-container="{ selector: 'img' }" class="row">
         <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+            class="card card-background card-featured-post neon-shadow-golden view mb-4"
           >
             <img
               :data-src="require('~/static/skywalker.jpg')"
@@ -47,7 +47,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+            class="card card-background card-featured-post neon-shadow-golden view mb-4"
           >
             <img
               :data-src="
@@ -83,7 +83,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-3"
+            class="card card-background card-featured-post neon-shadow-golden view mb-4"
           >
             <img
               data-src="https://miro.medium.com/max/1500/1*WpG7T6nPIYcyqt1hLgqQNg.png"

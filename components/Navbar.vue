@@ -22,6 +22,7 @@
             right
             class="mr-md-3"
           >
+            <b-dropdown-item href="/projects">Todos projetos</b-dropdown-item>
             <b-dropdown-item href="/pro"
               >Profissionais e acadêmicos</b-dropdown-item
             >
