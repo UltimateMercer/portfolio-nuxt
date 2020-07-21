@@ -5,7 +5,9 @@ category: 'Design'
 tags:
   - Criação de logotipo
 cover: ultimate-mercer-logo-1.jpg
+coverAlt: ''
 imgorientation: 'portrait'
 description:
 fontStyle: ''
+isPublished: false
 ---

@@ -6,9 +6,11 @@ tags:
   - Tipografia cinética
   - Edição de video
 cover: https://i.imgur.com/pA5cVcC.png
+coverAlt: ''
 imgorientation: ''
 description:
 fontStyle: ''
+isPublished: false
 ---
 
 Hey Everyone, this is simple a test blog post to show you

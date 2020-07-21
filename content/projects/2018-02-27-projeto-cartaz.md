@@ -7,9 +7,11 @@ tags:
   - Edição
   - Photoshop
 cover: https://i.imgur.com/5e51dHU.jpg
+coverAlt: ''
 imgorientation: ''
 description:
 fontStyle: ''
+isPublished: false
 ---
 
 # **Em atualização**

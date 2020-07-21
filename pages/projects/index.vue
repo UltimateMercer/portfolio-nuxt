@@ -1,24 +1,27 @@
 <template>
-  <section class="bg-dark">
-    <div class="container-fluid mt-5 pb-4">
-      <div class="container text-light pt-3 px-lg-0 mb-5">
-        <h2 class="pt-5 mb-3">
-          <strong>
-            Projetos profissionais e acadêmicos
-          </strong>
-        </h2>
-        <p class="text-size">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          eveniet eligendi earum? Ipsa illum voluptatum magnam cupiditate nam
-          ipsum dolores, voluptas quam voluptates aspernatur nemo quae. Pariatur
-          eaque iusto aliquid?
-        </p>
+  <div>
+    <div style="height:80px"></div>
+    <section class="bg-dark">
+      <div class="container-fluid pb-4">
+        <div class="container text-light px-lg-0 mb-5">
+          <h2 class="pt-4 mb-3">
+            <strong>
+              Projetos profissionais e acadêmicos
+            </strong>
+          </h2>
+          <p class="text-size">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            eveniet eligendi earum? Ipsa illum voluptatum magnam cupiditate nam
+            ipsum dolores, voluptas quam voluptates aspernatur nemo quae.
+            Pariatur eaque iusto aliquid?
+          </p>
+        </div>
+        <div class="col-lg-10 col-md-12 col-12 offset-lg-1 offset-md-0 pb-5">
+          <MasonryCards :posts="posts" :route="route" />
+        </div>
       </div>
-      <div class="col-lg-10 col-md-12 col-12 offset-lg-1 offset-md-0 pb-5">
-        <MasonryCards :posts="posts" :route="route" />
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 <script>
 import MasonryCards from '~/components/MasonryCards.vue'

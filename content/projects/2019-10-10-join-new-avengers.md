@@ -6,10 +6,13 @@ tags:
   - Tipografia cinética
   - Edição de video
 #cover: \assets\images\personal\cap-construtivismo1.jpg
-cover: https://i.imgur.com/uIY2t68.jpg
-imgorientation: 'parallax'
+cover: https://i.imgur.com/jlu6jwf.jpg
+coverAlt: ''
+#coverAlt: https://i.imgur.com/uIY2t68.jpg
+imgorientation: 'square-profile'
 description: 'Arte produzida para avaliação na disciplina de Tipografia 1, do curso de Design Digital.'
 fontStyle: ''
+isPublished: true
 ---
 
 ## **Estética do poster : Construtivismo Russo**

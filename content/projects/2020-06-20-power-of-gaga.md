@@ -7,9 +7,11 @@ tags:
   - Arte
   - Poster
 cover: https://i.imgur.com/PfaL9wP.jpg
-imgorientation: 'landscape'
-description:
+coverAlt: ''
+imgorientation: 'image-top'
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 fontStyle: ''
+isPublished: true
 ---
 
 <img src="https://i.imgur.com/PfaL9wP.jpg" class="img-fluid mx-auto d-block">

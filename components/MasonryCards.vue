@@ -31,12 +31,29 @@
               {{ post.attributes.timestamp }}
             </span>
           </p>
-          <nuxt-link :to="post._path" class="text-warning my-2" target="_blank"
-            ><span class="btn btn-block btn-sm btn-dark btn-link">
-              <strong
-                >Acessar <i class="fas fa-external-link-alt"></i
-              ></strong> </span
-          ></nuxt-link>
+          <div v-if="post.attributes.isPublished">
+            <nuxt-link
+              :to="post._path"
+              class="text-warning my-2"
+              target="_blank"
+            >
+              <span class="btn btn-block btn-sm btn-dark btn-link">
+                <strong>
+                  <font-awesome-icon :icon="['fas', 'external-link-alt']" />
+
+                  Acessar
+                </strong>
+              </span>
+            </nuxt-link>
+          </div>
+          <div v-else>
+            <button class="btn btn-block btn-sm btn-dark" disabled>
+              <strong>
+                <font-awesome-icon :icon="['fas', 'external-link-alt']" />
+                Acessar
+              </strong>
+            </button>
+          </div>
         </div>
       </div>
     </div>
