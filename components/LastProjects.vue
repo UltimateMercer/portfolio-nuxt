@@ -1,17 +1,17 @@
 <template>
-  <div class="container-fluid bg-dark">
+  <div class="container-fluid">
     <div
       class="col-lg-10 col-md-12 col-10 offset-lg-1 offset-md-0 offset-1 px-0 pb-5"
     >
-      <h2 class="text-light mb-2">
+      <h2 class="mb-2">
         <strong>
           Projetos recentes
         </strong>
       </h2>
       <div v-lazy-container="{ selector: 'img' }" class="row">
-        <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
+        <div class="col-lg-4 col-md-4 col-12 offset-lg-0  offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-4"
+            class="card card-background card-featured-post neon-shadow-darkblue view mb-4"
           >
             <img
               :data-src="require('~/static/skywalker.jpg')"
@@ -47,11 +47,11 @@
         </div>
         <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-4"
+            class="card card-background card-featured-post neon-shadow-darkblue view mb-4"
           >
             <img
               :data-src="
-                require('~/assets/images/personal/ultimate-mercer-logo-1.jpg')
+                require('~/assets/images/projects/ultimate-mercer-logo-1.jpg')
               "
               class="card-background-image featured-image"
               alt="Image Post"
@@ -83,7 +83,7 @@
         </div>
         <div class="col-lg-4 col-md-4 col-12 offset-lg-0 offset-md-0">
           <div
-            class="card card-background card-featured-post neon-shadow-golden view mb-4"
+            class="card card-background card-featured-post neon-shadow-darkblue view mb-4"
           >
             <img
               data-src="https://miro.medium.com/max/1500/1*WpG7T6nPIYcyqt1hLgqQNg.png"

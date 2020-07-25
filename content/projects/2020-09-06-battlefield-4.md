@@ -1,7 +1,8 @@
 ---
 title: Battlefield 4
-timestamp: 13 de Novembro de 2019
+date: '2017-06-14'
 category: 'Design'
+type: 'Pessoal'
 tags:
   - Tipografia cinética
   - Edição de video

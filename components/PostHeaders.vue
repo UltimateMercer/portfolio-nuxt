@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="post.orientation === 'portrait' || post.orientation === ''">
-      <div class="header-content header-h-full d-md-inline-flex mb-5">
+      <div class="header-content header-h-full d-md-inline-flex  mb-4">
         <div class="header-info-half header-h-full">
           <div class="h-100 d-flex flex-column justify-content-end">
             <h1 class="blog-title">
@@ -11,31 +11,35 @@
             </h1>
             <h5 class="blog-meta">
               <span class="marker marker-dark sm-mark">
-                {{ post.date }}
+                {{ dateFormat }}
               </span>
             </h5>
             <div class="d-flex">
               <div class="mt-1">
-                <span v-if="post.category === 'Design'">
-                  <span class="badge badge-uv mx-0">
-                    {{ post.category }}
-                  </span>
-                </span>
-                <span v-if="post.category === 'Dev'">
-                  <span class="badge badge-primary text-dark mx-0">
-                    {{ post.category }}
-                  </span>
+                <span
+                  v-if="post.category === 'Design'"
+                  class="badge badge-uv mx-0"
+                >
+                  {{ post.category }}
                 </span>
                 <span
-                  v-for="(tag, i) in post.tags"
-                  :key="i"
-                  class="badge badge-dark"
-                  >{{ tag }}</span
+                  v-if="post.category === 'Dev'"
+                  class="badge badge-primary text-dark mx-0"
                 >
-              </div>
-            </div>
-            <div class="d-flex">
-              <div class="mb-3">
+                  {{ post.category }}
+                </span>
+                <span
+                  v-if="post.type === 'Pro'"
+                  class="badge badge-secondary mx-0"
+                >
+                  {{ post.type }}
+                </span>
+                <span
+                  v-if="post.type === 'Pessoal'"
+                  class="badge badge-orange mx-0"
+                >
+                  {{ post.type }}
+                </span>
                 <span
                   v-for="(tag, i) in post.tags"
                   :key="i"
@@ -46,17 +50,19 @@
             </div>
           </div>
         </div>
-        <div class="header-image-half header-h-full view">
+        <div class="header-image-half header-h-full view shadow-image">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full"
+            class="header-image-background header-h-full shadow-image"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
       </div>
     </div>
     <div v-if="post.orientation === 'landscape'">
-      <div class="header-content header-h-full d-md-inline-flex mb-5">
+      <div
+        class="header-content header-h-full d-md-inline-flex shadow-image mb-4"
+      >
         <div class="header-info header-h-full">
           <div class="h-100 d-flex flex-column justify-content-end">
             <h1 class="blog-title">
@@ -66,7 +72,7 @@
             </h1>
             <h5 class="blog-meta">
               <span class="marker marker-dark sm-mark">
-                {{ post.date }}
+                {{ dateFormat }}
               </span>
             </h5>
             <div class="d-flex">
@@ -79,6 +85,16 @@
                 <span v-if="post.category === 'Dev'">
                   <span class="badge badge-primary text-dark mx-0">
                     {{ post.category }}
+                  </span>
+                </span>
+                <span v-if="post.type === 'Pro'">
+                  <span class="badge badge-secondary mx-0">
+                    {{ post.type }}
+                  </span>
+                </span>
+                <span v-if="post.type === 'Pessoal'">
+                  <span class="badge badge-orange mx-0">
+                    {{ post.type }}
                   </span>
                 </span>
                 <span
@@ -124,20 +140,36 @@
             </h5>
             <h5 class="blog-meta">
               <span class="marker marker-dark">
-                {{ post.date }}
+                {{ dateFormat }}
               </span>
             </h5>
             <div class="d-flex">
               <div class="mt-1">
-                <span v-if="post.category === 'Design'">
-                  <span class="badge badge-uv mx-0">
+                <span>
+                  <span
+                    v-if="post.category === 'Design'"
+                    class="badge badge-uv mx-0"
+                  >
                     {{ post.category }}
                   </span>
                 </span>
-                <span v-if="post.category === 'Dev'">
-                  <span class="badge badge-primary text-dark mx-0">
-                    {{ post.category }}
-                  </span>
+                <span
+                  v-if="post.category === 'Dev'"
+                  class="badge badge-primary text-dark mx-0"
+                >
+                  {{ post.category }}
+                </span>
+                <span
+                  v-if="post.type === 'Pro'"
+                  class="badge badge-secondary mx-0"
+                >
+                  {{ post.type }}
+                </span>
+                <span
+                  v-if="post.type === 'Pessoal'"
+                  class="badge badge-orange mx-0"
+                >
+                  {{ post.type }}
                 </span>
                 <span
                   v-for="(tag, i) in post.tags"
@@ -186,20 +218,34 @@
                     </h5>
                     <h5 class="blog-meta">
                       <span class="marker marker-dark sm-mark">
-                        {{ post.date }}
+                        {{ dateFormat }}
                       </span>
                     </h5>
                     <div class="d-flex">
                       <div class="mt-1">
-                        <span v-if="post.category === 'Design'">
-                          <span class="badge badge-uv mx-0">
-                            {{ post.category }}
-                          </span>
+                        <span
+                          v-if="post.category === 'Design'"
+                          class="badge badge-uv mx-0"
+                        >
+                          {{ post.category }}
                         </span>
-                        <span v-if="post.category === 'Dev'">
-                          <span class="badge badge-primary text-dark mx-0">
-                            {{ post.category }}
-                          </span>
+                        <span
+                          v-if="post.category === 'Dev'"
+                          class="badge badge-primary text-dark mx-0"
+                        >
+                          {{ post.category }}
+                        </span>
+                        <span
+                          v-if="post.type === 'Pro'"
+                          class="badge badge-secondary mx-0"
+                        >
+                          {{ post.type }}
+                        </span>
+                        <span
+                          v-if="post.type === 'Pessoal'"
+                          class="badge badge-orange mx-0"
+                        >
+                          {{ post.type }}
                         </span>
                         <span
                           v-for="(tag, i) in post.tags"
@@ -252,25 +298,35 @@
                     </h5>
                     <h5 class="blog-meta">
                       <span class="marker marker-dark sm-mark">
-                        {{ post.date }}
+                        {{ dateFormat }}
                       </span>
                     </h5>
                     <div class="d-flex">
                       <div class="mt-1">
                         <span v-if="post.category === 'Design'">
-                          <span class="badge badge-uv mx-0">
+                          <span class="badge badge-uv mx-1">
                             {{ post.category }}
                           </span>
                         </span>
                         <span v-if="post.category === 'Dev'">
-                          <span class="badge badge-primary text-dark mx-0">
+                          <span class="badge badge-primary text-dark mx-1">
                             {{ post.category }}
+                          </span>
+                        </span>
+                        <span v-if="post.type === 'Pro'">
+                          <span class="badge badge-secondary mx-1">
+                            {{ post.type }}
+                          </span>
+                        </span>
+                        <span v-if="post.type === 'Pessoal'">
+                          <span class="badge badge-orange mx-1">
+                            {{ post.type }}
                           </span>
                         </span>
                         <span
                           v-for="(tag, i) in post.tags"
                           :key="i"
-                          class="badge badge-dark"
+                          class="badge badge-dark mx-1"
                           >{{ tag }}</span
                         >
                       </div>
@@ -287,12 +343,15 @@
       <div style="height:50px"></div>
       <div class="container-fluid p-0 mb-5">
         <div class="col-lg-10 offset-lg-1 col-12 p-lg-0">
-          <div class="header-simple">
-            <div v-lazy-container="{ selector: 'img' }" class="view">
+          <div class="header-simple ">
+            <div
+              v-lazy-container="{ selector: 'img' }"
+              class="view shadow-image"
+            >
               <img
                 :data-src="imageSrc"
                 alt=""
-                class="header-simple-image-top"
+                class="header-simple-image-top "
               />
               <div class="mask texture-mask-4"></div>
             </div>
@@ -305,20 +364,34 @@
                 </h1>
                 <h5 class="blog-meta">
                   <span class="marker marker-dark">
-                    {{ post.date }}
+                    {{ dateFormat }}
                   </span>
                 </h5>
                 <div class="d-flex">
                   <div class="mt-1">
-                    <span v-if="post.category === 'Design'">
-                      <span class="badge badge-uv mx-0">
-                        {{ post.category }}
-                      </span>
+                    <span
+                      v-if="post.category === 'Design'"
+                      class="badge badge-uv mx-0"
+                    >
+                      {{ post.category }}
                     </span>
-                    <span v-if="post.category === 'Dev'">
-                      <span class="badge badge-primary text-dark mx-0">
-                        {{ post.category }}
-                      </span>
+                    <span
+                      v-if="post.category === 'Dev'"
+                      class="badge badge-primary text-dark mx-0"
+                    >
+                      {{ post.category }}
+                    </span>
+                    <span
+                      v-if="post.type === 'Pro'"
+                      class="badge badge-secondary mx-0"
+                    >
+                      {{ post.type }}
+                    </span>
+                    <span
+                      v-if="post.type === 'Pessoal'"
+                      class="badge badge-orange mx-0"
+                    >
+                      {{ post.type }}
                     </span>
                     <span
                       v-for="(tag, i) in post.tags"
@@ -337,6 +410,9 @@
   </div>
 </template>
 <script>
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
+
 export default {
   name: 'PostHeaders',
 
@@ -368,6 +444,18 @@ export default {
 
       //   // Abaixo funfa
       //   // return require(`~/assets/images${this.routes}/${post.attributes.attributes.cover}`)
+    },
+
+    dateFormat() {
+      const formattedDate = format(
+        new Date(this.post.date),
+        "dd 'de' MMMM 'de' yyyy",
+        {
+          locale: ptBR
+        }
+      )
+
+      return formattedDate
     }
   }
 }

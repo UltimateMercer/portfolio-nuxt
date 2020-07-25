@@ -1,108 +1,52 @@
 <template>
-  <section>
-    <article class="container-fluid bg-dark">
-      <div class="container p-lg-0">
-        <div class="pt-4 pb-1 px-lg-4 px-1">
-          <h2 class="text-light mb-3"><strong>Projetos</strong></h2>
-          <p class="text-size text-light">
-            Aqui reúno todos os meus projetos e idéias desenvolvidas, tanto para
-            o âmbito acadêmico e profissional, quanto para o pessoal com o
-            objetivo de me manter sempre em evolução das minhas técnicas e
-            habilidades, e praticando o uso da criatividade para o
-            desenvolvimento dos meus projeto em geral.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <section class="container-fluid bg-dark p-0">
-      <div v-lazy-container="{ selector: 'img' }" class="row m-0 p-0">
+  <section class="container-fluid my-4">
+    <div v-lazy-container="{ selector: 'img' }">
+      <div
+        class="col-lg-10 col-md-12 col-12 offset-lg-1 offset-md-0 offset-0 px-0"
+      >
+        <h2 class="mb-3"><strong>Meus projetos</strong></h2>
         <div
-          class="col-lg-6 col-md-6 col-12 p-0 pl-lg-0 pr-lg-3 pl-md-0 pr-md-2"
+          class="card rounded-lg bg-dark text-white neon-shadow-red mt-3 mb-5"
         >
-          <div class="card bg-dark text-white neon-shadow-blue mt-3 mb-5">
-            <div class="view">
-              <img
-                :data-src="require('~/static/skywalker-capa.jpg')"
-                alt="Projetos acadêmicos e profissionais"
-                class="card-image-stories duotone-cyberpunk-t"
-              />
-              <div class="mask texture-mask-4"></div>
-              <div
-                class="card-img-overlay h-100 d-flex flex-column justify-content-end"
-              >
-                <div class="p-3">
-                  <h3 class="">
-                    <span class="marker marker-dark marker-title">
-                      <strong>Projetos acadêmicos e profissionais</strong>
-                    </span>
-                  </h3>
-                  <p>
-                    <span class="marker marker-dark">
-                      Aqui disponibilizo todos os meus projetos realizados em
-                      âmbito acadêmico e profissional.
-                    </span>
-                  </p>
-                  <div class="d-flex">
-                    <span class="badge badge-warning badge-tag">
-                      Última atualização: Jan 20
-                    </span>
-                  </div>
-                </div>
+          <div class="view">
+            <img
+              :data-src="require('~/static/logo-ultimatemercer.jpg')"
+              alt="Projetos pessoais"
+              class="card-image-stories duotone-cyberpunk-c"
+            />
+            <div class="mask texture-mask-3"></div>
+            <div
+              class="card-img-overlay h-100 d-flex flex-column justify-content-end"
+            >
+              <div class="p-2">
+                <h3 class="">
+                  <span class="marker marker-dark marker-title">
+                    <strong>Meus projetos</strong>
+                  </span>
+                </h3>
+                <p>
+                  <span class="marker marker-dark">
+                    Aqui disponibilizo tanto projetos pessoais, quanto projetos
+                    profissionais e acadêmicos.
+                  </span>
+                </p>
 
-                <nuxt-link
-                  to="/pro"
-                  class="stretched-link"
-                  title="Visualizar projetos"
-                ></nuxt-link>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-6 col-md-6 col-12 p-0 pr-lg-0 pl-lg-3 pr-md-0 pl-md-2"
-        >
-          <div class="card bg-dark text-white neon-shadow-red mt-3 mb-5">
-            <div class="view">
-              <img
-                :data-src="require('~/static/logo-ultimatemercer.jpg')"
-                alt="Projetos pessoais"
-                class="card-image-stories duotone-cyberpunk-c"
-              />
-              <div class="mask texture-mask-3"></div>
-              <div
-                class="card-img-overlay h-100 d-flex flex-column justify-content-end"
-              >
-                <div class="text-lg-right text-md-right p-3">
-                  <h3 class="">
-                    <span class="marker marker-dark marker-title">
-                      <strong>Projetos pessoais</strong>
-                    </span>
-                  </h3>
-                  <p>
-                    <span class="marker marker-dark">
-                      Aqui disponibilizo projetos pessoais, aprendizados, teste,
-                      desafios e alguns pedidos de amigos.
-                    </span>
-                  </p>
-
-                  <div class="">
-                    <span class="badge badge-warning badge-tag">
-                      Última atualização: Jan 20
-                    </span>
-                  </div>
+                <div class="">
+                  <span class="badge badge-warning badge-tag">
+                    Última atualização: Jan 20
+                  </span>
                 </div>
-                <nuxt-link
-                  to="/personal"
-                  class="stretched-link"
-                  title="Visualizar projetos"
-                ></nuxt-link>
               </div>
+              <nuxt-link
+                to="/projects"
+                class="stretched-link"
+                title="Visualizar projetos"
+              ></nuxt-link>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </section>
 </template>
 <script>
@@ -110,3 +54,8 @@ export default {
   name: 'Projects'
 }
 </script>
+<style lang="scss">
+.card-image-stories {
+  border-radius: 0.25rem !important;
+}
+</style>

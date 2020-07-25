@@ -1,7 +1,8 @@
 ---
 title: 'Design Corpo Nu'
-timestamp: 27 de fevereiro de 2018
+date: '2018-02-27'
 category: 'Design'
+type: 'Pro'
 tags:
   - Cartaz
   - Edição

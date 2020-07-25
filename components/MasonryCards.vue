@@ -21,38 +21,49 @@
         <div
           class="card-masonry-area-header h-100 d-flex flex-column justify-content-end"
         >
-          <h5 class="mb-2">
+          <h4 class="mb-2">
             <span class="marker marker-dark">
-              {{ post.attributes.title }}
+              <strong> {{ post.attributes.title }} </strong>
             </span>
-          </h5>
-          <p class="mb-2">
-            <span class="marker marker-dark">
-              {{ post.attributes.timestamp }}
+          </h4>
+          <span class="mb-2">
+            <span class="badge badge-warning">
+              {{ dateFormat(post) }}
             </span>
-          </p>
-          <div v-if="post.attributes.isPublished">
-            <nuxt-link
-              :to="post._path"
-              class="text-warning my-2"
-              target="_blank"
+            <span
+              v-if="post.attributes.category === 'Design'"
+              class="badge badge-uv mx-0"
             >
-              <span class="btn btn-block btn-sm btn-dark btn-link">
-                <strong>
-                  <font-awesome-icon :icon="['fas', 'external-link-alt']" />
-
-                  Acessar
-                </strong>
-              </span>
-            </nuxt-link>
+              {{ post.attributes.category }}
+            </span>
+            <span
+              v-if="post.attributes.category === 'Dev'"
+              class="badge badge-primary text-dark"
+            >
+              {{ post.attributes.category }}
+            </span>
+            <span
+              v-if="post.attributes.type === 'Pro'"
+              class="badge badge-secondary"
+            >
+              {{ post.attributes.type }}
+            </span>
+            <span
+              v-if="post.attributes.type === 'Pessoal'"
+              class="badge badge-orange"
+            >
+              {{ post.attributes.type }}
+            </span>
+          </span>
+          <div v-if="post.attributes.isPublished">
+            <router-link
+              :to="post.path"
+              class="stretched-link"
+              title="Acessar post do projeto"
+            ></router-link>
           </div>
           <div v-else>
-            <button class="btn btn-block btn-sm btn-dark" disabled>
-              <strong>
-                <font-awesome-icon :icon="['fas', 'external-link-alt']" />
-                Acessar
-              </strong>
-            </button>
+            <span class="stretched-link" title="Post em atualização"></span>
           </div>
         </div>
       </div>
@@ -60,6 +71,9 @@
   </div>
 </template>
 <script>
+import { format } from 'date-fns'
+import { ptBR } from 'date-fns/locale'
+
 export default {
   name: 'MasonryCards',
 
@@ -127,6 +141,14 @@ export default {
 
       // Abaixo funfa
       // return require(`~/assets/images${this.routes}/${post.attributes.cover}`)
+    },
+    dateFormat(post) {
+      const time = new Date(post.attributes.date)
+      const formattedDate = format(new Date(time), 'dd MMM yyyy', {
+        locale: ptBR
+      })
+
+      return formattedDate
     }
   }
 }

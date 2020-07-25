@@ -9,7 +9,7 @@
         <div class="page">
           <div class="post" :class="fontStyle">
             <!-- eslint-disable-next-line -->
-            <div v-html="post.html" />
+            <div v-html="post.html"></div>
           </div>
         </div>
       </div>
@@ -69,9 +69,10 @@ export default {
     headerInfo(post) {
       return {
         title: this.post.attributes.title,
-        date: this.post.attributes.timestamp,
+        date: this.post.attributes.date,
         description: this.post.attributes.description,
         category: this.post.attributes.category,
+        type: this.post.attributes.type,
         tags: this.post.attributes.tags,
         cover: this.post.attributes.cover,
         coverAlt: this.post.attributes.coverAlt,

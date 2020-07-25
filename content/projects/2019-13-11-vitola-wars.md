@@ -1,7 +1,8 @@
 ---
 title: 'Vitola Wars - 2021: O Início do Fim'
-timestamp: 13 de Novembro de 2019
+date: '2018-06-14'
 category: 'Design'
+type: 'Pessoal'
 tags:
   - Tipografia cinética
   - Edição de video

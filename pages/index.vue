@@ -3,10 +3,9 @@
     <PersonalHeader />
 
     <KnowledgeAreas />
-    <div class="bg-dark">
-      <Projects />
-      <LastProjects />
-    </div>
+
+    <Projects />
+    <LastProjects />
   </div>
 </template>
 

@@ -103,7 +103,7 @@ export default {
 <style lang="scss">
 .text-main {
   font-weight: 400;
-  line-height: 1.3333;
+  line-height: 1.5;
   font-size: 1.375rem;
 }
 

@@ -2,7 +2,7 @@
   <b-navbar tag="nav" toggleable="md" type="light" variant="light" fixed="top">
     <div class="container">
       <b-navbar-brand>
-        <nuxt-link to="/" class="navbar-brand">
+        <nuxt-link to="/" class="navbar-brand mx-2">
           <img
             src="~/static/logo-dark.png"
             width="70"
@@ -16,18 +16,9 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown
-            toggle-class="text-dark"
-            text="Projetos"
-            right
-            class="mr-md-3"
-          >
-            <b-dropdown-item href="/projects">Todos projetos</b-dropdown-item>
-            <b-dropdown-item href="/pro"
-              >Profissionais e acadêmicos</b-dropdown-item
-            >
-            <b-dropdown-item href="/personal">Pessoais</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <b-nav-item href="/projects">
+            Projetos
+          </b-nav-item>
           <b-nav-item href="/about">
             Sobre mim
           </b-nav-item>
@@ -59,6 +50,8 @@ export default {
   padding: 0.25rem !important;
   .navbar-nav {
     .nav-item {
+      padding: 0.25rem 1rem;
+      font-weight: 500;
       .nav-link {
         color: #121212;
       }

@@ -1,8 +1,8 @@
 ---
 title: Love Sasha
-timestamp: 13 de Novembro de 2019
-typePath: personal
+date: '2019-11-13'
 category: 'Design'
+type: 'Pessoal'
 tags:
   - Tipografia cinética
   - Edição de video
