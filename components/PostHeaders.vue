@@ -355,7 +355,7 @@
               />
               <div class="mask texture-mask-4"></div>
             </div>
-            <div class="container p-0">
+            <div class="px-2">
               <div class="header-simple-info mb-5">
                 <h1 class="blog-title">
                   <span class="marker marker-dark">

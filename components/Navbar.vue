@@ -1,12 +1,18 @@
 <template>
-  <b-navbar tag="nav" toggleable="md" type="light" variant="light" fixed="top">
+  <b-navbar
+    tag="nav"
+    toggleable="md"
+    type="dark"
+    variant="transparent-dark"
+    fixed="top"
+  >
     <div class="container">
       <b-navbar-brand>
         <nuxt-link to="/" class="navbar-brand mx-2">
           <img
-            src="~/static/logo-dark.png"
+            src="~/static/logo-light.png"
             width="70"
-            class="img-fluid brand"
+            class="img-fluid  brand"
             alt="Ultimate Mercer Logo"
           />
         </nuxt-link>
@@ -17,10 +23,10 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="/projects">
-            Projetos
+            <span class="marker marker-dark marker-link">Projetos</span>
           </b-nav-item>
           <b-nav-item href="/about">
-            Sobre mim
+            <span class="marker marker-dark marker-link">Sobre mim</span>
           </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
@@ -53,9 +59,13 @@ export default {
       padding: 0.25rem 1rem;
       font-weight: 500;
       .nav-link {
-        color: #121212;
+        color: #eaeaea;
       }
     }
   }
+}
+
+.bg-transparent-dark {
+  background-color: rgba(12, 12, 12, 0.25);
 }
 </style>
