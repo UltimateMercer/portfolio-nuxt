@@ -1,6 +1,6 @@
 <template>
   <div class="header-personal-background pt-lg-5 pt-3 view">
-    <div class="mask pattern-4 "></div>
+    <div class="mask pattern-4"></div>
 
     <div class="container pt-5 px-lg-0 px-4">
       <div class="card card-plain">
@@ -108,6 +108,7 @@
               </a>
             </div>
           </div>
+          <h1 class="marker marker-danger">{{ setBg() }}</h1>
         </div>
       </div>
     </div>
@@ -115,7 +116,43 @@
 </template>
 <script>
 export default {
-  name: 'PersonalHeader'
+  name: 'PersonalHeader',
+
+  data() {
+    return {
+      images: [
+        'https://i.imgur.com/PfaL9wP.jpg',
+        'https://i.imgur.com/86Be8nA.png',
+        'https://i.imgur.com/jlu6jwf.jpg',
+        'https://i.imgur.com/oO5abXP.jpg',
+        'https://i.imgur.com/o4mBUq7.jpg'
+      ]
+    }
+  },
+
+  created() {
+    // this.setBg()
+    setInterval(this.setBg, 3000)
+  },
+
+  computed: {
+    // setBg() {
+    //   const img = this.images
+    //   const randomImg = Math.floor(Math.random() * img.length)
+    //   // console.log(random, months[random], img)
+    //   // const find = img.find()
+    //   return { randomImg }
+    // }
+  },
+
+  methods: {
+    setBg() {
+      const img = this.images
+      const randomImg = Math.floor(Math.random() * img.length)
+      // console.log(random, months[random], img)
+      return randomImg
+    }
+  }
 }
 </script>
 
