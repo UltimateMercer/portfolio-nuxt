@@ -44,7 +44,7 @@
             </span>
             <span
               v-if="post.attributes.type === 'Pro'"
-              class="badge badge-secondary"
+              class="badge badge-dark"
             >
               {{ post.attributes.type }}
             </span>

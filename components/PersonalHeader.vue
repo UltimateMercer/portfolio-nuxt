@@ -1,6 +1,9 @@
 <template>
-  <div class="header-personal-background pt-lg-5 pt-3 view">
-    <div class="mask pattern-4"></div>
+  <div
+    v-lazy:background-image="setBg"
+    class="header-personal-background pt-lg-5 pt-3  shadow-image view"
+  >
+    <div class="mask pattern-2 rgba-black-medium"></div>
 
     <div class="container pt-5 px-lg-0 px-4">
       <div class="card card-plain">
@@ -34,10 +37,7 @@
                 rel="noopener"
                 title="Acessar e-mail"
               >
-                <font-awesome-icon
-                  :icon="['fas', 'envelope-square']"
-                  size="lg"
-                />
+                <font-awesome-icon :icon="['fas', 'envelope']" size="lg" />
                 E-mail
               </a>
               <a
@@ -57,10 +57,7 @@
                 rel="noopener"
                 title="Acessar facebook"
               >
-                <font-awesome-icon
-                  :icon="['fab', 'facebook-square']"
-                  size="lg"
-                />
+                <font-awesome-icon :icon="['fab', 'facebook-f']" size="lg" />
                 Facebook
               </a>
               <a
@@ -80,7 +77,7 @@
                 rel="noopener"
                 title="Linkedin"
               >
-                <font-awesome-icon :icon="['fab', 'linkedin']" size="lg" />
+                <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
                 Linkedin
               </a>
               <a
@@ -90,10 +87,7 @@
                 rel="noopener"
                 title="Behance"
               >
-                <font-awesome-icon
-                  :icon="['fab', 'behance-square']"
-                  size="lg"
-                />
+                <font-awesome-icon :icon="['fab', 'behance']" size="lg" />
                 Behance
               </a>
               <a
@@ -103,12 +97,11 @@
                 rel="noopener"
                 title="Medium"
               >
-                <font-awesome-icon :icon="['fab', 'medium']" size="lg" />
+                <font-awesome-icon :icon="['fab', 'medium-m']" size="lg" />
                 Medium
               </a>
             </div>
           </div>
-          <h1 class="marker marker-danger">{{ setBg() }}</h1>
         </div>
       </div>
     </div>
@@ -125,34 +118,28 @@ export default {
         'https://i.imgur.com/86Be8nA.png',
         'https://i.imgur.com/jlu6jwf.jpg',
         'https://i.imgur.com/oO5abXP.jpg',
-        'https://i.imgur.com/o4mBUq7.jpg'
+        'https://i.imgur.com/o4mBUq7.jpg',
+        'https://i.imgur.com/8piwqqp.jpg',
+        'https://i.imgur.com/o5zs6x4.jpg',
+        'https://i.imgur.com/CFqCqxw.png',
+        'https://i.imgur.com/HWFTcVA.jpg',
+        'https://i.imgur.com/0Dym5bt.png',
+        'https://i.imgur.com/1k8By32.png',
+        'https://i.imgur.com/3fnDbHr.jpg',
+        'https://i.imgur.com/PAsyPjn.png'
       ]
     }
   },
 
-  created() {
-    // this.setBg()
-    setInterval(this.setBg, 3000)
-  },
-
   computed: {
-    // setBg() {
-    //   const img = this.images
-    //   const randomImg = Math.floor(Math.random() * img.length)
-    //   // console.log(random, months[random], img)
-    //   // const find = img.find()
-    //   return { randomImg }
-    // }
-  },
-
-  methods: {
     setBg() {
       const img = this.images
       const randomImg = Math.floor(Math.random() * img.length)
-      // console.log(random, months[random], img)
-      return randomImg
+      return img[randomImg]
     }
-  }
+  },
+
+  methods: {}
 }
 </script>
 
@@ -178,7 +165,8 @@ export default {
   &-background {
     width: 100% !important;
     min-height: 100vh;
-    background-image: url('https://i.imgur.com/PfaL9wP.jpg');
+    // background-image: url('https://i.imgur.com/PfaL9wP.jpg');
+    background-color: #121212;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -196,5 +184,9 @@ export default {
   .personal-header {
     min-height: 100vh;
   }
+}
+
+.rgba-black-medium {
+  background-color: rgba(18, 18, 18, 0.5) !important;
 }
 </style>

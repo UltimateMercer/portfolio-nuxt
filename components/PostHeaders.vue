@@ -28,10 +28,7 @@
                 >
                   {{ post.category }}
                 </span>
-                <span
-                  v-if="post.type === 'Pro'"
-                  class="badge badge-secondary mx-0"
-                >
+                <span v-if="post.type === 'Pro'" class="badge badge-dark mx-0">
                   {{ post.type }}
                 </span>
                 <span
@@ -40,20 +37,14 @@
                 >
                   {{ post.type }}
                 </span>
-                <span
-                  v-for="(tag, i) in post.tags"
-                  :key="i"
-                  class="badge badge-dark"
-                  >{{ tag }}</span
-                >
               </div>
             </div>
           </div>
         </div>
-        <div class="header-image-half header-h-full view shadow-image">
+        <div class="header-image-half header-h-full view">
           <div
             v-lazy:background-image="imageSrc"
-            class="header-image-background header-h-full shadow-image"
+            class="header-image-background header-h-full"
           ></div>
           <div class="mask texture-mask-4"></div>
         </div>
@@ -88,7 +79,7 @@
                   </span>
                 </span>
                 <span v-if="post.type === 'Pro'">
-                  <span class="badge badge-secondary mx-0">
+                  <span class="badge badge-dark mx-0">
                     {{ post.type }}
                   </span>
                 </span>
@@ -97,12 +88,6 @@
                     {{ post.type }}
                   </span>
                 </span>
-                <span
-                  v-for="(tag, i) in post.tags"
-                  :key="i"
-                  class="badge badge-dark"
-                  >{{ tag }}</span
-                >
               </div>
             </div>
           </div>
@@ -159,10 +144,7 @@
                 >
                   {{ post.category }}
                 </span>
-                <span
-                  v-if="post.type === 'Pro'"
-                  class="badge badge-secondary mx-0"
-                >
+                <span v-if="post.type === 'Pro'" class="badge badge-dark mx-0">
                   {{ post.type }}
                 </span>
                 <span
@@ -171,12 +153,6 @@
                 >
                   {{ post.type }}
                 </span>
-                <span
-                  v-for="(tag, i) in post.tags"
-                  :key="i"
-                  class="badge badge-dark"
-                  >{{ tag }}</span
-                >
               </div>
             </div>
           </div>
@@ -237,7 +213,7 @@
                         </span>
                         <span
                           v-if="post.type === 'Pro'"
-                          class="badge badge-secondary mx-0"
+                          class="badge badge-dark mx-0"
                         >
                           {{ post.type }}
                         </span>
@@ -247,12 +223,6 @@
                         >
                           {{ post.type }}
                         </span>
-                        <span
-                          v-for="(tag, i) in post.tags"
-                          :key="i"
-                          class="badge badge-dark"
-                          >{{ tag }}</span
-                        >
                       </div>
                     </div>
                   </div>
@@ -314,7 +284,7 @@
                           </span>
                         </span>
                         <span v-if="post.type === 'Pro'">
-                          <span class="badge badge-secondary mx-1">
+                          <span class="badge badge-dark mx-1">
                             {{ post.type }}
                           </span>
                         </span>
@@ -323,12 +293,6 @@
                             {{ post.type }}
                           </span>
                         </span>
-                        <span
-                          v-for="(tag, i) in post.tags"
-                          :key="i"
-                          class="badge badge-dark mx-1"
-                          >{{ tag }}</span
-                        >
                       </div>
                     </div>
                   </div>
@@ -340,7 +304,6 @@
       </div>
     </div>
     <div v-if="post.orientation === 'image-top'">
-      <div style="height:50px"></div>
       <div class="container-fluid p-0 mb-5">
         <div class="col-lg-10 offset-lg-1 col-12 p-lg-0">
           <div class="header-simple ">
@@ -356,7 +319,7 @@
               <div class="mask texture-mask-4"></div>
             </div>
             <div class="px-2">
-              <div class="header-simple-info mb-5">
+              <div class="header-simple-info mt-3 mb-5">
                 <h1 class="blog-title">
                   <span class="marker marker-dark">
                     {{ post.title }}
@@ -383,7 +346,7 @@
                     </span>
                     <span
                       v-if="post.type === 'Pro'"
-                      class="badge badge-secondary mx-0"
+                      class="badge badge-dark mx-0"
                     >
                       {{ post.type }}
                     </span>
@@ -393,12 +356,6 @@
                     >
                       {{ post.type }}
                     </span>
-                    <span
-                      v-for="(tag, i) in post.tags"
-                      :key="i"
-                      class="badge badge-dark"
-                      >{{ tag }}</span
-                    >
                   </div>
                 </div>
               </div>
@@ -460,3 +417,8 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.header-simple-image-top {
+  height: 600px !important;
+}
+</style>

@@ -3,10 +3,10 @@
     <div class="container p-0">
       <div class="col-12 py-3 px-lg-4">
         <div class="header-profile">
-          <div class="col-12 p-0 my-4">
+          <div class="col-12 p-0 my-5">
             <div v-lazy-container="{ selector: 'img' }" class="head-avatar">
               <img
-                :data-src="require('~/static/me.jpg')"
+                :data-src="require('~/static/logo-ultimatemercer.jpg')"
                 width="300"
                 class="img-fluid rounded-sm mx-auto d-block"
                 alt="Oi, eu sou o Julian"

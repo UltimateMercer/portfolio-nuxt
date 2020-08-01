@@ -2,10 +2,14 @@ import Mode from 'frontmatter-markdown-loader/mode'
 const path = require('path')
 const glob = require('glob')
 
-const markdownPaths = ['pro', 'personal']
+const markdownPaths = 'projects'
 
 export default {
   mode: 'universal',
+  target: 'static',
+  router: {
+    base: '/portfolio-nuxt/'
+  },
   /*
    ** Headers of the page
    */

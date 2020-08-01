@@ -66,6 +66,6 @@ export default {
 }
 
 .bg-transparent-dark {
-  background-color: rgba(12, 12, 12, 0.25);
+  background-color: rgba(18, 18, 18, 0.5);
 }
 </style>

@@ -2,8 +2,11 @@
   <div>
     <Navbar />
     <nuxt />
+
     <Footer />
-    <DuotoneFilters />
+    <div class="bg-dark">
+      <DuotoneFilters />
+    </div>
   </div>
 </template>
 <script>

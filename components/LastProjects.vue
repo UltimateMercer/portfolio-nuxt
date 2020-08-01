@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div
-      class="col-lg-10 col-md-12 col-10 offset-lg-1 offset-md-0 offset-1 px-0 pb-5"
+      class="col-lg-10 col-md-12 col-10 offset-lg-1 offset-md-0 offset-1 px-0 pb-4"
     >
       <h2 class="mb-2">
         <strong>
