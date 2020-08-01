@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[15],{321:function(t,e){t.exports={attributes:{title:"Hope",date:"2019-11-13",category:"Design",type:"Pessoal",tags:["Tipografia cinética","Edição de video"],cover:"https://i.imgur.com/qpw5KQ1.png",coverAlt:"",imgorientation:"landscape",description:null,fontStyle:"",isPublished:!1},html:""}}}]);

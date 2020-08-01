@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{320:function(t,o){t.exports={attributes:{title:"Love Sasha",date:"2019-11-13",category:"Design",type:"Pessoal",tags:["Tipografia cinética","Edição de video"],cover:"https://i.imgur.com/ILvw4HT.jpg",coverAlt:"",imgorientation:"portrait",description:null,fontStyle:"",isPublished:!1},html:""}}}]);

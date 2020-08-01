@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[21],{327:function(t,e){t.exports={attributes:{title:"Ultimate Awakening",date:"2019-06-14",category:"Design",type:"Pessoal",tags:["Tipografia cinética","Edição de video"],cover:"https://i.imgur.com/oO5abXP.jpg",coverAlt:"",imgorientation:"landscape",description:null,fontStyle:"",isPublished:!1},html:""}}}]);

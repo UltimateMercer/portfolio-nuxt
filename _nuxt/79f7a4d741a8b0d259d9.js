@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[20],{326:function(t,e){t.exports={attributes:{title:"Kiernan Shipka Art",date:"2019-11-13",category:"Design",type:"Pessoal",tags:["Tipografia cinética","Edição de video"],cover:"https://i.imgur.com/WOL8Ywf.jpg",coverAlt:"",imgorientation:"portrait",description:null,fontStyle:"",isPublished:!1},html:""}}}]);

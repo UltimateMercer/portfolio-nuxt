@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{318:function(t,o){t.exports={attributes:{title:"Design Corpo Nu",date:"2018-02-27",category:"Design",type:"Pro",tags:["Cartaz","Edição","Photoshop"],cover:"https://i.imgur.com/5e51dHU.jpg",coverAlt:"",imgorientation:"",description:null,fontStyle:"",isPublished:!1},html:"<h1><strong>Em atualização</strong></h1>\n"}}}]);
